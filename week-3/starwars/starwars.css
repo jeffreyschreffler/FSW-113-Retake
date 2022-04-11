@@ -20,6 +20,8 @@
   the 'dataWrapper' <div> in a 2 x 2 grid 
   */
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .dataCellLabel {
@@ -32,6 +34,7 @@
 .dataCell {
   text-align: center;
   padding: 5px;
+  text-transform: capitalize;
 }
 
 .footer {

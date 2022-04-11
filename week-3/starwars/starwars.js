@@ -31,9 +31,9 @@ function getFromSWAPI(queryType,itemID) {
 
 const updateInfo = responseJSON => {
     const keys = Object.keys(responseJSON);
-    document.querySelector("#dataLabel1").innerText = keys[0].replace('/_/g', '' );
+    document.querySelector("#dataLabel1").innerText = keys[0].replace(/_/g, ' ' );
     document.querySelector("#dataValue1").innerText = responseJSON[keys[0]];
-    document.querySelector("#dataLabel2").innerText = keys[5].replace('/_/g', " ");
+    document.querySelector("#dataLabel2").innerText = keys[5].replace(/_/g, ' ');
     document.querySelector("#dataValue2").innerText = responseJSON[keys[5]];
 }
 
