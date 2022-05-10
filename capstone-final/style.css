@@ -1,0 +1,114 @@
+/* 
+    Create all the style definitions necessary to make your app look as close 
+    to the example as possible. You will need to use display:grid to make the 
+    bug reports display in three columns (see week 4).
+*/
+
+* {
+    margin: 5px;
+    box-sizing: border-box;
+    background-image: url(./images/wallpaper.jpg);
+}
+#reportWrapper {
+    border: .05em solid white;
+    border-radius: .5rem;
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: .2rem;
+    display: grid;
+}
+#topbar {
+    margin: .5rem auto;
+    color: white;
+    background-image: none;
+    background-color: red;
+    border-radius: .5rem;
+    width: 95%;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: .1rem;
+}
+#reporterByDiv,
+#bugDescrDiv {
+    margin: auto;
+}
+#systemDiv,
+#subSystemDiv {
+    width: 98%;
+    margin: auto;
+    margin-left: 0rem;
+    margin-bottom: .1rem;
+}
+#reportedBy,
+#system,
+#subSystem,
+#bugDesc {
+    background-image: none;
+    background-color: rgb(206, 200, 200);
+    font-size: 20px;
+    border-radius: .4rem;
+}
+#bttnDiv {
+    margin-top: 0rem;
+    width: 95%;
+}
+#resetBtn,
+#submitBtn {
+    background-image: none;
+    background-color: red;
+    color: white;
+    padding: .2rem;
+    margin: .2rem;
+    font-size: 1rem;
+}
+#listWrapper {
+    border-radius: .5rem;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: .05rem solid white;
+}
+div,
+p {
+    background-image: none;
+}
+.reportDiv {
+    background-color: rgb(185, 184, 184);
+    height: 13rem;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+.par{
+    background-color: transparent;
+    display: flex;
+}
+.check {
+    width: 1.5rem;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10rem;
+    text-align: center;
+    color: white;
+}
+.deleteBtn {
+    width: 1.5rem;
+    background-color: red;
+    border-radius: 10rem;
+    text-align: center;
+    color: white
+}
+.resolveBug {
+    color: white;
+    background-color: rgb(115, 115, 169);
+    opacity: 90%;
+    border-radius: .5rem;
+}
